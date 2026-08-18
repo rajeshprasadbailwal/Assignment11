@@ -1,9 +1,9 @@
 fastapi
 uvicorn
-langserve
-langchain
-langchain-core
-langchain-google-genai
-langgraph
 pydantic
-sse-starlette
+langserve[all]
+langchain-core
+langchain-community
+langchain-google-genai
+pypdf
+faiss-cpu
