@@ -34,12 +34,10 @@ llm = ChatGoogleGenerativeAI(
     temperature=0
 )
 
-# Text embeddings setup
 embeddings = GoogleGenerativeAIEmbeddings(
-    model="models/text-embedding-004",
+    model="text-embedding-004",
     google_api_key=GOOGLE_API_KEY
 )
-
 # Initialize global text splitter and vector store fallback
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
 
